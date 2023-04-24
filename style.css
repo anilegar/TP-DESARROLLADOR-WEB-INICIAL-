@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    font-family: 'Roboto';
+    margin: 0;
+    font-size: calc(0.5em + 0.5vw);
+  
+}
+
+.carousel-control-next-icon{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+    background-color: grey;
+    
+}
+
+.carousel-control-prev-icon{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+    background-color: grey;
+}
+
+.container-xl{
+    background-color:aquamarine;
+    border-color: black;
+}
+
+.seccion{
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    
+}
+
+.caja1{
+    border:3px solid; 
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    background-color: grey;
+    padding:  20px;
+    
+}
+
+h1{
+    text-align: center;
+    color: #70D8D1 ;
+    font-size: 50px;
+    font-weight: bold;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+       
+}
+
+.diseño{
+    width: 25%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.1);
+    transition: .5s ease-in;
+    display: flex;
+    max-width: 100%;
+    
+  }
+
+  .diseño img {
+    width: auto;
+    height: auto;
+    max-height: 200px;
+    display: flex;
+    max-width: 100%;
+   
+  }
+
+  .diseño:hover {
+    background-color: #70D8D1 ;
+       
+  }
+
+  .main h5 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+      
+  }
+  
+  .main h4 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+       
+  }
+
+  button{
+    font-weight: bold;
+    font-size: calc(0.8em + 0.8vw);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+ /*------------------------Formulario de Reclamo------------------------------------*/
+
+ .form__registro{
+  width: 400px;
+  background-color: #757373 ;
+  padding: 30px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  font-family: "Arial, Helvetica, sans-serif";
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form__registro h4{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.form__entradas{
+  width: 100%;
+  background: #f9fafc;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid black ;
+  font-family: "Arial, Helvetica, sans-serif";
+  font-size: 18px;
+  color: black;
+}
+
+.form__registro p{
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form__registro a{
+  color: white;
+  text-decoration: none;
+}
+
+.form__registro a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+.form__registro .form__bottoms{
+  width: 100%;
+  background: rgb(180, 179, 179);
+  border: none;
+  padding: 12px;
+  color: black;
+  margin: 16px 0;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: calc(0.8em + 0.8vw);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.submit:hover{
+  background: #70D8D1;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  }
+
+
+  /* --------------------------------footer ---------------------------*/
+  
+  footer{
+    margin-top: 30px;
+    background: #757373 ;
+  }
+  
+  .col-4{
+    align-items: stretch;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: center;
+}
+
+.listafooter{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.listafooter a{
+    color: black;
+}
+
+@media (max-width: 576px){
+    .row{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 30px;
+    }
+    .col-4{
+        width: 100%;
+        padding: 40p
+    }
+}
