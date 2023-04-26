@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -17,6 +16,48 @@
 </head>
 <body>
  <!--HEADER-->
+ <header>
+ <div> <img src="imagenes/header/Img.png" alt="" width="200px" height="200px">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="navbar-brand" href="#Nosotros"> Nosotros</a>
+                </li>
+                <li>
+                  <a class="navbar-brand" href="#">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="navbar-brand" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#alimentos">Alimentos</a></li>
+                    <li><a class="dropdown-item" href="#farmacos">Fármacos</a></li>
+                    <li><a class="dropdown-item" href="#accesorios">Accesorios</a></li>
+                  </ul>
+
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-brand" href="#">Login</a>
+                </li>
+                <li>
+                <form class="nav-item" class="d-flex">
+                
+                  <button id="boton-carro" class="btn btn-outline-success" type="submit"><img src="imagenes/header/Img-carrito-chico.png" height="30" width="30" alt=""></button>
+                </form>
+                </li>
+              </ul>
+             
+            </div>
+          </div>
+        </nav>
+ </header>
 <main> 
     <section class="carousel">
     <div id="carouselExample" class="carousel slide">
@@ -46,45 +87,45 @@
       <section class="seccion">    
             <div class="card mat-card caja1" id="caja1"> <h1>Alimentos</h1> </div>
             <br>
-              <div class="main">
+              <div class="main" id="alimentos">
                 <!--alimento 1-->
                 <div class="diseño">
                     <img src="imagenes/alimentos/alimento_maxi_adulto-removebg-preview.png" alt="maxi adulto">
-                    <h5>Royal Canin Max Adu 15kg</h5>
+                    <h5>Royal Canin Max 15kg</h5>
                     <h4>$19000</h4>
                     <button class="comprar">Añadir al carrito </button>  
                 </div>
                  <!--alimento 2-->
                 <div class="diseño">
                     <img src="imagenes/alimentos/eukanuba_adulto_small-removebg-preview.png" alt="Eukanuba Adulto Small ">
-                    <h5> Eukanuba Adulto Small x 3kg </h5>
+                    <h5> Eukanuba Adulto S x 3kg </h5>
                     <h4>$8000</h4>
                     <button class="comprar">Añadir al carrito </button>  
                 </div>
                  <!--alimento 3-->
                 <div class="diseño">
                     <img src="imagenes/alimentos/eukanuba_weight_control-removebg-preview.png" alt="Eukanuba Weight Control ">
-                    <h5>Eukanuba Weight Control x 3kg </h5>
+                    <h5>Eukanuba Weight C x 3kg </h5>
                     <h4>$7000</h4>
                     <button class="comprar">Añadir al carrito </button>  
                 </div>
                  <!--alimento 4-->
                 <div class="diseño">
                     <img src="imagenes/alimentos/fit_gato-removebg-preview.png" alt="Royal Canin Fit Gato adulto">
-                    <h5>Royal Canin Fit Gatoadu 15kg</h5>
+                    <h5>Royal Canin Fit x 15kg</h5>
                     <h4>$22000</h4>
                     <button class="comprar">Añadir al carrito </button>  
                 </div>
                  <!--alimento 5-->
                 <div class="diseño">
-                    <img src="imagenes/alimentos/iams-removebg-preview.png" alt="Iams Gato Adulto">
-                    <h5>Iams Gato Adulto <br>x 15kg</h5>
-                    <h4>$19500</h4>
+                    <img src="imagenes/alimentos/iams_kitten-removebg-preview.png" alt="Iams">
+                    <h5>Iams gato Kitten <br> x 3kg </h5>
+                    <h4>$4500</h4>
                     <button class="comprar">Añadir al carrito </button>  
                 </div>
                  <!--alimento 6-->
                 <div class="diseño">
-                    <img src="imagenes/alimentos/pro-plan-kitten_151.png" alt="Proplan kitten">
+                    <img src="imagenes/alimentos/proplankitten-removebg-preview.png" alt="Proplan kitten">
                     <h5>Proplan Kitten <br> x 7,5kg</h5>
                     <h4>$10000</h4>
                     <button class="comprar">Añadir al carrito </button>  
@@ -92,14 +133,14 @@
                  <!--alimento 7-->
                 <div class="diseño">
                     <img src="imagenes/alimentos/proplan sensitive skin.png" alt="Proplan Sensitive Skin">
-                    <h5>Proplan Sensitive Skin <br> x 15kg </h5>
+                    <h5>Proplan Sensitive Skin x 15kg </h5>
                     <h4>$25000</h4>
                     <button class="comprar">Añadir al carrito </button>  
                 </div>
                  <!--alimento 8-->
                 <div class="diseño">
                     <img src="imagenes/alimentos/siamese-removebg-preview.png" alt="Siamese">
-                    <h5>Royal Canin Siamese <br> x 2kg</h5>
+                    <h5>Royal Canin Siamese x 2kg</h5>
                     <h4>$5000</h4>
                     <button class="comprar">Añadir al carrito </button>  
                 </div>
@@ -109,25 +150,25 @@
              <section class="seccion">    
                  <div class="card mat-card caja1" id="caja1"> <h1>Fármacos</h1> </div>    
                  <br>
-                 <div class="main">
+                 <div class="main" id="farmacos">
                     <!--fármaco 1-->
                     <div class="diseño">
                         <img src="imagenes/farmacos/ac-ps-revolution2-7.png" alt="Revolution gato adulto">
-                        <h5>Revolution gato adulto 2,6-7kg</h5>
+                        <h5>Revolution gato adulto -7kg</h5>
                         <h4>$3500</h4>
                         <button class="comprar">Añadir al carrito </button>  
                     </div>
                      <!--farmaco 2-->
                     <div class="diseño">
                         <img src="imagenes/farmacos/BRAVECTO-GATO-GRANDE-removebg-preview.png" alt="Bravecto gato Grande ">
-                        <h5> Bravecto Gato Grande 2,8kg - 6,25kg </h5>
+                        <h5> Bravecto Gato 2 kg - 6,25kg </h5>
                         <h4>$4000</h4>
                         <button class="comprar">Añadir al carrito </button>  
                     </div>
                      <!--farmaco 3-->
                     <div class="diseño">
                         <img src="imagenes/farmacos/FrontlinePlus-para-Perro-hasta-10kg-removebg-preview.png" alt="Frontline Plus Perro Hasta 10kg">
-                        <h5>Frontline Plus Perro Hasta 10kg</h5>
+                        <h5>Frontline Plus Perro 10kg</h5>
                         <h4>$2500</h4>
                         <button class="comprar">Añadir al carrito </button>  
                     </div>
@@ -140,29 +181,29 @@
                     </div>
                      <!--farmaco 5-->
                     <div class="diseño">
-                        <img src="imagenes/farmacos/otovier_nf-removebg-preview.png" alt="Otovier NF">
-                        <h5>Otovier  NF <br>Limpia orejas</h5>
+                        <img src="imagenes/farmacos/otovier-clasico preview.png" alt="Otovier">
+                        <h5>Otovier  clasico </h5>
                         <h4>$1800</h4>
                         <button class="comprar">Añadir al carrito </button>  
                     </div>
                      <!--farmaco 6-->
                     <div class="diseño">
-                        <img src="imagenes/farmacos/nexgard.png" alt="Nexgard spectra">
-                        <h5> Nexgard S 15,1kg-30gr <br> x 7,5kg</h5>
-                        <h4>$5500</h4>
+                        <img src="imagenes/farmacos/nexgard1.png" alt="Nexgard">
+                        <h5> Nexgard - 10kg </h5>
+                        <h4>$4500</h4>
                         <button class="comprar">Añadir al carrito </button>  
                     </div>
                      <!--farmaco 7-->
                     <div class="diseño">
-                        <img src="imagenes/farmacos/Power-Comprimidos-con-gatos-removebg-preview.png" alt="Power Comprimidos perro 10kg-20kg">
-                        <h5>Power Comprimidos perro 10kg-20kg </h5>
+                        <img src="imagenes/farmacos/power-comprimido preview.png" alt="Power Comprimidos perro 10kg-20kg">
+                        <h5>Power Comprimidos-20kg </h5>
                         <h4>$2800</h4>
                         <button class="comprar">Añadir al carrito </button>  
                     </div>
                      <!--farmaco 8-->
                     <div class="diseño">
                         <img src="imagenes/farmacos/simparica-20-40-kg-removebg-preview.png" alt="Simparica 20-40kg">
-                        <h5>Simparica perro <br> 20-40kg</h5>
+                        <h5>Simparica perro -40kg</h5>
                         <h4>$5000</h4>
                         <button class="comprar">Añadir al carrito </button>  
                   </div>
@@ -174,33 +215,33 @@
             <section class="seccion">    
                 <div class="card mat-card caja1" id="caja1"> <h1>Accesorios</h1> </div> 
                 <br>   
-                <div class="main">
+                <div class="main" id="accesorios">
                         <!--Accesorio 1-->
                     <div class="diseño">
-                        <img src="imagenes/accesorios/bife_accesorio-removebg-preview.png" alt="Bife Flavor Bone Cancat">
-                        <h5>Bife Flavor Bone <br> Cancat</h5>
+                        <img src="imagenes/accesorios/flavor.png" alt="Bife Flavor Bone Cancat">
+                        <h5>Bife Flavor</h5>
                         <h4>$2500</h4>
                         <button class="comprar">Añadir al carrito </button>  
                     </div>
                      <!--Accesorio 2-->
                     <div class="diseño">
-                        <img src="imagenes/accesorios/cancat_clasicas-removebg-preview.png" alt="Piedras Cancat Clasicas ">
-                        <h5> Piedras Cancat <br> Clasicas</h5>
+                        <img src="imagenes/accesorios/piedras-removebg-preview.png" alt="Piedras Cancat">
+                        <h5> Piedras Cancat </h5>
                         <h4>$4000</h4>
                         <button class="comprar">Añadir al carrito </button>  
                     </div>
                      <!--Accesorio 3-->
                     <div class="diseño">
                         <img src="imagenes/accesorios/come-lovely-removebg-preview.png" alt="Comedero lovely">
-                        <h5>Comedero <br> Lovely</h5>
+                        <h5>Comedero Lovely</h5>
                         <h4>$5500</h4>
                         <button class="comprar">Añadir al carrito </button>  
                     </div>
                      <!--Accesorio 4-->
                     <div class="diseño">
-                        <img src="imagenes/accesorios/moises1.png" alt="Moises">
-                        <h5>Moises <br>Mister Hueso</h5>
-                        <h4>$8500</h4>
+                        <img src="imagenes/accesorios/paleta.png" alt="paleta">
+                        <h5>Paleta Ice</h5>
+                        <h4>$1500</h4>
                         <button class="comprar">Añadir al carrito </button>  
                     </div>
                      <!--Accesorio 5-->
@@ -212,8 +253,8 @@
                     </div>
                      <!--Accesorio 6-->
                     <div class="diseño">
-                        <img src="imagenes/accesorios/smart_anti_estres-removebg-preview.png" alt="Ratones">
-                        <h5>Ratones <br> Sisal</h5>
+                        <img src="imagenes/accesorios/pelotas-removebg-preview.png" alt="pelotas">
+                        <h5>Pack <br> Pelotas </h5>
                         <h4>$1500</h4>
                         <button class="comprar">Añadir al carrito </button>  
                     </div>
@@ -226,40 +267,37 @@
                     </div>
                      <!--Accesorio 8-->
                     <div class="diseño">
-                        <img src="imagenes/accesorios/smart_anti_stres_raton_con_pluma-removebg-preview.png" alt="Smart Anti Estres Raton y pluma">
-                        <h5> Anti Estres Raton pluma</h5>
+                        <img src="imagenes/accesorios/raton-removebg-preview.png" alt="Raton">
+                        <h5> Raton Sisal</h5>
                         <h4>$2000</h4>
                         <button class="comprar">Añadir al carrito </button>  
                   </div>
                 </div>
             </section>    
+            <!--------------------------Nosotros--------------------------------->
             <section class="seccion">    
-                <div class="card mat-card caja1" id="caja1"> <h1>¿Quienes Somos?</h1> </div>    
-                <br>
-                <div class="main">
+                <div class="card mat-card caja1" id="caja1"> <h1 id="Nosotros">Nosotros</h1> </div> 
+<br>
+                <h2 class="texto-mision">Más de 10 años dedicados al cuidado de las mascotas</h2>
+<br>
+                <div class="main" id="accesorios">
+                <div class="nosotros">
+                    <h2>Visión</h2>
                     <br>
-                    <!--perfil 1-->
-                    <div class="diseño">
-                        <img src="imagenes/Quienes Somos/img1.png" alt="Flor Maldonado">
-                        <h5><br>Flor Maldonado</h5>
-                    </div>
-                    <!--perfil 2-->
-                    <div class="diseño">
-                        <img src="imagenes/Quienes Somos/img3.png" alt="Maximiliano Lenta">
-                        <h5><br>Maximiliano Lenta</h5>
-                    </div>
-                    <!--Perfil 3-->
-                    <div class="diseño">
-                        <img src="imagenes/Quienes Somos/img2.png" alt="Ana Leal">
-                        <h5><br>Ana Leal</h5>
-                    </div>
-                    <!--Perfil 4-->
-                    <div class="diseño">
-                        <img src="imagenes/Quienes Somos/img4.png" alt="Gonzalo Heredia">
-                        <h5><br>Gonzalo Heredia</h5>
-                    </div>
+                    
+                    <p>Las mascotas son nuestra pasión. Trabajamos todos los días para mejorar su calidad de vida, como así también la relación con sus cuidadores mediante el traspaso de información útil y la recomendación de productos adecuados.</p>
+                             
+                    <br>
                 </div>
-            </section>  
+                <div class="nosotros">
+                    <h2>Nuestra misión</h2>
+                    <br>
+                    
+                                        <p>Lograr que nuestra comunidad comparta la misma pasión que nosotros por las mascotas y, de esta forma, seguir fomentando el cuidado de las mismas. Continuar brindando la mejor atención por medio de personal capacitado para informar y cubrir las necesidades del cliente y su mascota con productos de primera calidad.</p>
+                </div>
+                </div>
+                </div>
+            </section> 
 
             <!--------------------------Formulario De Reclamo--------------------------------->
             <section class="seccion1">    

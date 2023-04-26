@@ -6,7 +6,81 @@
     font-size: calc(0.5em + 0.5vw);
   
 }
+/*---------------------------------------------header------------------------------------------------------*/
+header {
+  width: 100%;
+overflow:hidden;
+display: flex;
+min-height: 100px;
+background: #757373;
+padding: 5px;
+align-items:center;
 
+}
+
+
+.wrapper {
+  width: 80%;
+  max-width:1000px;
+  margin:auto;
+  overflow:hidden;
+}
+
+header img {
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 0px;
+} 
+
+header nav {
+  float: right;
+  line-height: 50px;
+  align-items:end;
+}
+
+
+
+header nav a { 
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding: 48px 45px ;
+  line-height:15%;
+  font-size: 15px;
+  font-weight:bold;
+  font-style: normal;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+header nav a:hover {
+background: #70D8D1;
+border: 25px ;
+ border-radius: 20px;
+
+ 
+
+}
+
+#boton-carro { 
+padding: 10px; 
+background: grey;
+background-color: grey;
+margin-left:5px;
+margin-top: 0px;
+} 
+
+#boton-carro:hover { 
+  padding: 10px; 
+  background: #00ffff; 
+  color: white; 
+}
+
+.dropdown-item {
+  line-height: 80px;
+  border-color: #70D8D1;
+
+}
+/*--------------------------------------------carousel-----------------------------------------------------*/
 .carousel-control-next-icon{
     display: inline-block;
     width: 3rem;
@@ -29,7 +103,7 @@
 }
 
 .container-xl{
-    background-color:aquamarine;
+    background-color:#70D8D1 ;
     border-color: black;
 }
 
@@ -194,6 +268,43 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
   }
+
+  /* --------------------------------Quienes somos---------------------------*/
+  .nosotros{
+    width: 45%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.1);
+    transition: .5s ease-in;
+    display: flex;
+    max-width: 100%;
+    
+  }
+
+
+  .texto-mision{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+  }
+ 
+  .seccion h2{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .seccion p{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
 
 
   /* --------------------------------footer ---------------------------*/
