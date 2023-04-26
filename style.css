@@ -269,6 +269,36 @@ input[type=number] {
   -moz-appearance: textfield;
   }
 
+  .formu{
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.1);
+    transition: .5s ease-in;
+    display: flex;
+    max-width: 100%;
+    
+  }
+  
+  .formu img{
+    width: 500px; 
+    height: auto; 
+    display: flex;
+    margin-top: 30px;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+
+
+
+
   /* --------------------------------Quienes somos---------------------------*/
   .nosotros{
     width: 45%;
@@ -346,3 +376,4 @@ input[type=number] {
         padding: 40p
     }
 }
+

@@ -22,3 +22,15 @@ document.querySelector('#contact-form').addEventListener('submit', function(even
   });
   document.querySelector('#contact-form').reset();
 });
+
+/*---------------------------------API--------------------------------------*/
+fetch('datos.json')
+.then(response => response.json())
+.then(data => {
+  // Obtener la URL de la imagen
+  const imageUrl = data.message;
+  // Asignar la URL a la etiqueta img
+  const imgElement = document.getElementById('myImage');
+  imgElement.src = imageUrl;
+})
+.catch(error => console.error(error));
